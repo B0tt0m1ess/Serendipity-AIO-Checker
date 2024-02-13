@@ -1,0 +1,22 @@
+VM Checker:检查该Combo的邮箱是否注册
+线程不多介绍
+Enable Only Check @live @outlook @hotmail(Y/N)字面意思
+很多字面意思的设置不介绍
+Blocked：尝试多次该账户或密码被阻止了的Combo
+Inbox Searcher Retry Times 就是邮件搜索重试几次，如果在这几次内还是因为代理出现问题就会返回N/A，下同
+Payments Checker Retry Times
+
+
+Enable Proxies Checker(Contain Min (G)PP)(Y/N) 是否开启H代理模式，就是读取代理然后检测代理
+当检测出好的时候会停止检测，对于免费代理非常友好，当Min Good Proxies Pool的数量小于当前Good Proxies Pool的数量就不会再进行测了
+Min Proxies Pool的数量小于当前Proxies Pool的数量就会重新更新代理，Number Of Proxy Retries Using The API Obtained At Once
+就是获取一次代理，这些代理用几次，免费代理设置为1就好了
+这些介绍的功能直到空格都是开启H代理模式才启动的
+
+如果H代理模式，才会有Refrsh Proxies Pool Time(S)这个选项的意义
+
+显示就不介绍了
+
+
+这边建议如果付费代理API不使用H代理模式
+付费API提取请用/n提取，/r/n我还没有适配（免费API同）
