@@ -1,0 +1,13 @@
+.radio-button .radio {
+    -fx-translate-x: 6px;
+    -fx-background-color: #90a8dc !important;
+    -fx-pref-width: 22px !important;
+    -fx-pref-height: 22px !important;
+}
+
+.radio-button:selected .radio > .dot {
+    -fx-translate-y: -1px;
+    -fx-background-color: #707070 !important; /* 选中状态下圆点的颜色 */
+    -fx-min-width: 17px !important;
+    -fx-min-height: 17px !important
+}

@@ -1,0 +1,29 @@
+.text-area {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 5.0, 5.0);
+}
+.text-area .content {
+    -fx-background-color: #000000;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+.text-area .scroll-pane .scroll-bar:vertical {
+    -fx-background-color: #afa7c7; /* 滚动条背景颜色 */
+}
+
+.text-area .scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: #afa7c7; /* 滚动条背景颜色 */
+}
+
+.text-area .scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #4a90b7; /* 滑块背景颜色 */
+}
+
+.text-area .scroll-pane .scroll-bar:horizontal .thumb {
+    -fx-background-color: #4a90b7; /* 滑块背景颜色 */
+}
+.text-area .scroll-pane .scroll-bar:vertical .increment-arrow,
+.text-area .scroll-pane .scroll-bar:vertical .decrement-arrow {
+    -fx-opacity: 0; /* 将箭头的不透明度设置为0，隐藏箭头 */
+}

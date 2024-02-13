@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="662.0" prefWidth="649.0" style="-fx-background-color: #7c8383;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SerendipityAIOChecker.checker.GUI.ConsoleOutput">
+    <Label alignment="CENTER" layoutX="-4.0" onMouseDragged="#move" onMousePressed="#onMousePressed" opacity="0.8" prefHeight="28.0" prefWidth="656.0" style="-fx-background-color: #8c00ff;" text="HexH Checker Console Output" textFill="WHITE">
+        <font>
+          <Font name="Agency FB" size="20.0" />
+        </font>
+      <cursor>
+         <Cursor fx:constant="MOVE" />
+      </cursor>
+    </Label>
+    <Button layoutX="611.0" layoutY="2.0" mnemonicParsing="false" onAction="#exit" prefHeight="15.0" prefWidth="24.0" style="-fx-background-radius: 100; -fx-border-radius: 100; -fx-background-color: #d12b2b;" />
+    <Button layoutX="577.0" layoutY="2.0" mnemonicParsing="false" onAction="#minimize" prefHeight="15.0" prefWidth="24.0" style="-fx-background-radius: 100; -fx-border-radius: 100; -fx-background-color: #ffa200;" />
+    <Label layoutX="271.0" layoutY="632.0" prefHeight="31.0" prefWidth="105.0" text="By HexH">
+        <font>
+          <Font name="Berlin Sans FB" size="27.0" />
+        </font>
+    </Label>
+   <TextArea fx:id="output" layoutX="-4.0" layoutY="28.0" opacity="0.9" prefHeight="600.0" prefWidth="656.0" stylesheets="@../Css/textarea1.css">
+      <font>
+         <Font size="15.0" />
+      </font></TextArea>
+   <Button layoutX="106.0" layoutY="632.0" mnemonicParsing="false" onAction="#clear" prefHeight="23.0" prefWidth="24.0" style="-fx-background-color: #3d6b7b; -fx-background-radius: 1000;" />
+   <Label layoutX="137.0" layoutY="632.0" text="Clear">
+      <font>
+         <Font size="17.0" />
+      </font>
+   </Label>
+</AnchorPane>

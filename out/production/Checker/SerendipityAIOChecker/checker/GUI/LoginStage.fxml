@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cache="true" cacheHint="SPEED" prefHeight="350.0" prefWidth="960.0" style="-fx-background-color: #474b4c;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SerendipityAIOChecker.checker.GUI.LoginStage">
+   <children>
+      <ImageView fitHeight="539.0" fitWidth="962.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/wallhaven-qz6v3d_3555x1980.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" onMouseDragged="#move" onMousePressed="#onMousePressed" prefHeight="26.0" prefWidth="961.0" style="-fx-background-color: #2177b8;" text="HexH Checker User Login" textAlignment="CENTER" textFill="#93b5cf">
+         <font>
+            <Font name="Berlin Sans FB" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor></Label>
+      <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="7.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/My.png" />
+         </image>
+      </ImageView>
+      <Button alignment="CENTER" layoutX="937.0" layoutY="4.0" mnemonicParsing="false" onAction="#exit" opacity="0.6" prefHeight="20.0" prefWidth="20.0" scaleShape="false" style="-fx-border-radius: 100; -fx-background-radius: 100; -fx-background-color: red;">
+         <font>
+            <Font size="1.0" />
+         </font></Button>
+      <Label fx:id="logo" layoutX="208.0" layoutY="158.0" prefHeight="46.0" prefWidth="234.0" text="Hexh Checker" textFill="#2e317c">
+         <font>
+            <Font size="35.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Label>
+      <Label fx:id="info" layoutX="19.0" layoutY="219.0" prefHeight="30.0" prefWidth="610.0" text="This is an AIO Checker that is still in the testing stage,created by Hexh(Chinese)." textFill="#1f2040">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="208.0" layoutY="364.0" mnemonicParsing="false" onAction="#qqGroup" prefHeight="34.0" prefWidth="234.0" style="-fx-background-color: transparent;" text="QQ Chat Group:902851879" textFill="#1f2040">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="241.0" layoutY="387.0" prefHeight="2.0" prefWidth="167.0" style="-fx-background-color: #2177b8;" text="Label" textFill="#1d99ff">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="667.0" layoutY="127.0" prefHeight="246.0" prefWidth="220.0" style="-fx-background-color: #474b4c; -fx-background-radius: 20;">
+         <children>
+            <TextField fx:id="user" alignment="CENTER" layoutX="46.0" layoutY="14.0" prefHeight="39.0" prefWidth="186.0" promptText="Username" style="-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 5.0, 5.0);" stylesheets="@../Css/textfield.css">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <PasswordField fx:id="pass" alignment="CENTER" layoutX="46.0" layoutY="67.0" prefHeight="39.0" prefWidth="186.0" promptText="Password" style="-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 5.0, 5.0);" stylesheets="@../Css/textfield.css">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </PasswordField>
+            <TextField fx:id="outHWID" editable="false" layoutX="46.0" layoutY="123.0" prefHeight="34.0" prefWidth="186.0" promptText="HWID" style="-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 5.0, 5.0);" stylesheets="@../Css/textfield.css">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Button layoutX="72.0" layoutY="172.0" mnemonicParsing="false" onAction="#login" prefHeight="35.0" prefWidth="135.0" style="-fx-background-color: #525288; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 5.0, 5.0);" text="Login" textFill="#93b5cf">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="15.0" layoutY="216.0" prefHeight="15.0" prefWidth="264.0" text="望您开心每一天，不必被小人所谋划之事而生气！" textFill="#93b5cf" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
